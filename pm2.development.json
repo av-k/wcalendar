@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "wcalendar-api-development",
+      "script": "./server",
+      "interpreter": "babel-node",
+      "max_memory_restart": "512M",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  ]
+}

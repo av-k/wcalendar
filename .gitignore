@@ -1,0 +1,14 @@
+**/.DS_STORE
+npm-debug.log
+.imdone
+coverage
+node_modules
+.env
+.npm
+.config
+.idea
+.pm2*
+.v8*
+*.logs
+.babel.json
+.ash_history

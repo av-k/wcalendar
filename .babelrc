@@ -1,0 +1,10 @@
+{
+  "presets": ["latest"],
+  "plugins": [
+    ["transform-runtime", {
+      "polyfill": false,
+      "generator": true
+    }],
+    "transform-class-properties"
+  ]
+}

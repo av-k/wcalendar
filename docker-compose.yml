@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+  # API Server
+  server-api:
+    build:
+      context: .
+    hostname: server-api
+    depends_on:
+      - db-mongo
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app/
+      - /usr/src/app/node_modules/
+    links:
+      - "db-mongo"
+
+
+  # Database
+  db-mongo:
+    image: mongo
+    hostname: db-mongo
+    ports:
+      - "27017:27017"
